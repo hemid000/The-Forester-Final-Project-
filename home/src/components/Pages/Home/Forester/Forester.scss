@@ -1,8 +1,68 @@
 @import "./../../../../scss/style.scss";
 
 #forester {
+  padding-top: 200px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
+
+  ::selection {
+    background: rgba(0, 0, 0, 0.16);
+  }
+
+  .forester_header {
+    h5,
+    h1,
+    h4,
+    a {
+      opacity: 0.99;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    h5 {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      margin-bottom: 0;
+    }
+
+    h1 {
+      font-size: 130px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.65em;
+      text-transform: initial;
+      margin-bottom: 20px;
+      letter-spacing: -0.1px;
+    }
+
+    .explore_now {
+      text-align: center;
+
+      a {
+        font-weight: 500;
+        font-size: 10.5px;
+        line-height: 1;
+        display: inline-block;
+        padding: 17px 37px 17px 37px;
+        margin: 5px;
+        text-transform: uppercase;
+        border-radius: 50px;
+        letter-spacing: 1.5px;
+        color: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        background-color: rgba(190, 208, 148, 0.8);
+      }
+    }
+  }
 }
