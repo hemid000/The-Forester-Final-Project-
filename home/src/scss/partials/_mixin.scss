@@ -61,3 +61,44 @@
   letter-spacing: $letter_spacing;
   opacity: $opacity;
 }
+
+// General Extends
+
+%img-contain {
+  object-fit: contain;
+  object-position: center;
+  cursor: pointer;
+}
+
+%img-cover {
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+%d-flex {
+  display: flex;
+  align-items: center;
+}
+
+%d-flex-start {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+%d-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Forester Section Extends
+
+%forester_h5_copy {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+  color: $main_color;
+}

@@ -17,7 +17,7 @@
     h4,
     a {
       opacity: 0.99;
-      color: white;
+      color: $main_color;
       text-align: center;
       text-transform: uppercase;
     }
@@ -59,7 +59,7 @@
         text-transform: uppercase;
         border-radius: 50px;
         letter-spacing: 1.5px;
-        color: rgba(255, 255, 255, 0.95);
+        color: $main_color;
         border: 1px solid rgba(255, 255, 255, 0.15);
         background-color: rgba(190, 208, 148, 0.8);
       }
