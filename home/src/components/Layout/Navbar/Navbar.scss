@@ -49,13 +49,8 @@
     }
 
     #home_li {
-      &:hover {
-        .hover_ul_home {
-          opacity: 1;
-        }
-      }
-
       .hover_ul_home {
+        visibility: hidden;
         opacity: 0;
         transition: 0.4s ease-in-out;
         position: absolute;
@@ -65,6 +60,7 @@
         box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
         background-color: $navbar_background_color;
         z-index: 5;
+
         li {
           @extend %d-flex;
           justify-content: space-between;
@@ -78,6 +74,22 @@
           letter-spacing: 0.2px;
           transition: all 0.3s;
           color: $navbar_background_li_color;
+
+          .hover2_ul {
+            @extend .hover_ul_home;
+            top: 0;
+            left: 100%;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 5;
+
+            .hover2_lists {
+              &:hover {
+                color: #fff;
+                background-color: rgba(255, 255, 255, 0.03);
+              }
+            }
+          }
         }
 
         .hover_lists_home {
@@ -86,27 +98,19 @@
             background-color: rgba(255, 255, 255, 0.03);
           }
         }
-
         .hover_lists_home1 {
           &:hover {
             .hover2_ul {
-              opacity: 1 !important;
+              visibility: visible;
+              opacity: 1;
             }
           }
         }
-
-        .hover2_ul {
-          @extend .hover_ul_home;
-          top: 0;
-          left: 100%;
-          opacity: 0 !important;
-          z-index: 5;
-          .hover2_lists {
-            &:hover {
-              color: #fff;
-              background-color: rgba(255, 255, 255, 0.03);
-            }
-          }
+      }
+      &:hover {
+        .hover_ul_home {
+          visibility: visible;
+          opacity: 1;
         }
       }
     }

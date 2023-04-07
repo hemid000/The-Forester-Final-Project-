@@ -15,11 +15,11 @@ const Navbar = () => {
           <div className="col-md-5">
             <ul className="left_side">
               <li id="home_li">
-                home <i class="fa-solid fa-angle-down"></i>
+                home <i className="fa-solid fa-angle-down"></i>
                 <ul className="hover_ul_home">
                   <li className="hover_lists_home hover_lists_home1">
                     Home one page
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i className="fa-solid fa-angle-down"></i>
                     <ul className="hover2_ul">
                       <li className="hover2_lists">Home main onepage</li>
                       <li className="hover2_lists">Home text slider onepage</li>
@@ -29,21 +29,21 @@ const Navbar = () => {
                   </li>
                   <li className="hover_lists_home">
                     Home multi page
-                    <i class="fa-solid fa-angle-down"></i>
+                    <i className="fa-solid fa-angle-down"></i>
                   </li>
                 </ul>
               </li>
               <li>
-                pages <i class="fa-solid fa-angle-down"></i>
+                pages <i className="fa-solid fa-angle-down"></i>
               </li>
               <li>
-                portfolio <i class="fa-solid fa-angle-down"></i>
+                portfolio <i className="fa-solid fa-angle-down"></i>
               </li>
               <li>
-                shop <i class="fa-solid fa-angle-down"></i>
+                shop <i className="fa-solid fa-angle-down"></i>
               </li>
               <li>
-                blog <i class="fa-solid fa-angle-down"></i>
+                blog <i className="fa-solid fa-angle-down"></i>
               </li>
             </ul>
           </div>

@@ -102,3 +102,13 @@
   margin-bottom: 0;
   color: $main_color;
 }
+
+// Story Section Extends
+
+%story_h5_copy {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: inherit;
+}

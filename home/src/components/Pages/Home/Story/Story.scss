@@ -1,0 +1,44 @@
+@import "./../../../../scss/style.scss";
+
+#story {
+  padding: 100px 0;
+
+  h5 {
+    opacity: 0.99;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .story_items {
+    h5 {
+      @extend %story_h5_copy;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.65em;
+      font-family: "Nunito Sans", sans-serif;
+      color: $story_h2_color;
+      font-style: normal;
+      text-align: center;
+    }
+
+    .read_more {
+      @extend %d-flex-center;
+      margin: 10px 0;
+      .story_p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.6em;
+        font-family: "Nunito Sans", sans-serif;
+        color: $story_read_more_color;
+        display: inline-block;
+      }
+
+      a {
+        @extend .story_p;
+      }
+    }
+  }
+}
