@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Frank+Ruhl+Libre:wght@300;400;500;700;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
+}
+
+#forester {
+  padding-top: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+#forester ::-moz-selection {
+  background: rgba(0, 0, 0, 0.16);
+}
+#forester ::selection {
+  background: rgba(0, 0, 0, 0.16);
+}
+#forester .forester_header h5,
+#forester .forester_header h1,
+#forester .forester_header h4,
+#forester .forester_header a {
+  opacity: 0.99;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+}
+#forester .forester_header h5 {
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+}
+#forester .forester_header h1 {
+  font-size: 130px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+#forester .forester_header h4 {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.65em;
+  text-transform: initial;
+  margin-bottom: 20px;
+  letter-spacing: -0.1px;
+}
+#forester .forester_header .explore_now {
+  text-align: center;
+}
+#forester .forester_header .explore_now a {
+  font-weight: 500;
+  font-size: 10.5px;
+  line-height: 1;
+  display: inline-block;
+  padding: 17px 37px 17px 37px;
+  margin: 5px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  letter-spacing: 1.5px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(190, 208, 148, 0.8);
+  transition: all 0.5s ease-out;
+}
+#forester .forester_header .explore_now a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+} /*# sourceMappingURL=Forester.css.map */

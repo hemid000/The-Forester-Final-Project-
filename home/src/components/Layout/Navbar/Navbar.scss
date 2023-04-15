@@ -35,7 +35,7 @@
       padding: 32px 5px;
       letter-spacing: 1px;
       gap: 6px;
-      transition: color 0.2s;
+      transition: 0.3s ease-in-out;
       position: relative;
 
       &:hover {
@@ -48,11 +48,15 @@
       }
     }
 
-    #home_li {
+    #home_li,
+    #pages_li,
+    #portfolio_li,
+    #shop_li,
+    #blog_li {
       .hover_ul_home {
         visibility: hidden;
         opacity: 0;
-        transition: 0.4s ease-in-out;
+        transition: 0.3s ease-in-out;
         position: absolute;
         top: 100%;
         left: 0;
@@ -72,16 +76,17 @@
           line-height: 1.8;
           font-family: Poppins, sans-serif;
           letter-spacing: 0.2px;
-          transition: all 0.3s;
+          transition: 0.3s ease-in-out;
           color: $navbar_background_li_color;
 
           .hover2_ul {
             @extend .hover_ul_home;
             top: 0;
             left: 100%;
-            visibility: hidden;
-            opacity: 0;
             z-index: 5;
+            visibility: hidden !important;
+            opacity: 0;
+            transition: 0.3s ease-in-out;
 
             .hover2_lists {
               &:hover {
@@ -96,17 +101,15 @@
           &:hover {
             color: #fff;
             background-color: rgba(255, 255, 255, 0.03);
-          }
-        }
-        .hover_lists_home1 {
-          &:hover {
+
             .hover2_ul {
-              visibility: visible;
+              visibility: visible !important;
               opacity: 1;
             }
           }
         }
       }
+
       &:hover {
         .hover_ul_home {
           visibility: visible;
@@ -132,7 +135,7 @@
 
     .social_network {
       @extend %d-flex;
-      transition: color 0.2s;
+      transition: 0.3s ease-in-out;
 
       &:hover {
         color: $hover_color;
