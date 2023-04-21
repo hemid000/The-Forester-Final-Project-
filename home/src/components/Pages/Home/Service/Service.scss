@@ -1,0 +1,95 @@
+@import "./../../../../scss/style.scss";
+
+#service {
+  background-color: $service_background_color;
+  padding: 130px 0;
+
+  h3,
+  h5 {
+    font-family: Montserrat;
+  }
+
+  h5 {
+    opacity: 0.99;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .service_header {
+    text-align: center;
+
+    h5 {
+      @extend %story_h5_copy;
+      margin: 0;
+    }
+
+    h2 {
+      @extend %service_h2_copy;
+    }
+  }
+
+  .service_box {
+    .service_img {
+      overflow: hidden;
+      position: relative;
+
+      img {
+        @extend %img-cover;
+        width: 100%;
+        height: 180px;
+        // transform: scale(1.5);
+      }
+
+      .service_ruler {
+        position: absolute;
+        top: calc((100% - 50px) / 2);
+        left: calc((100% - 50px) / 2);
+        color: #fff;
+
+        svg {
+          font-size: 50px;
+        }
+      }
+    }
+
+    .service_details {
+      padding: 45px 41px;
+      background-color: #fff;
+      text-align: center;
+
+      h3 {
+        font-weight: 600;
+        font-size: 27px;
+        letter-spacing: -1.5px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.65em;
+        font-family: "Nunito Sans", sans-serif;
+        margin: 5px 0 15px;
+        color: #000;
+      }
+
+      h5 {
+        @extend %story_h5_copy;
+        margin: 0;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .explore_now {
+    @extend %explore_now_copy;
+    a {
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      background-color: transparent;
+      color: rgba(0, 0, 0, 0.85);
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+        background-color: #000;
+      }
+    }
+  }
+}

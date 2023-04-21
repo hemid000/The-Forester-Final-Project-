@@ -95,6 +95,31 @@
 
 // Forester Section Extends
 
+%explore_now_copy {
+  text-align: center;
+
+  a {
+    font-weight: 500;
+    font-size: 10.5px;
+    line-height: 1;
+    display: inline-block;
+    padding: 17px 37px 17px 37px;
+    margin: 5px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    color: $main_color;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(190, 208, 148, 0.8);
+    transition: all 0.5s ease-out;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #fff;
+    }
+  }
+}
+
 %forester_h5_copy {
   font-size: 10px;
   font-weight: 500;
@@ -111,4 +136,17 @@
   letter-spacing: 1px;
   margin-bottom: 15px;
   color: inherit;
+}
+
+// Service Section Extends
+
+%service_h2_copy {
+  color: #000000;
+  text-align: center;
+  font-family: Montserrat;
+  font-weight: 700;
+  margin: 10px 0 40px 0;
+  font-size: 50px;
+  line-height: 0.92;
+  letter-spacing: -2px;
 }

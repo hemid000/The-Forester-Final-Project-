@@ -11,6 +11,10 @@
   outline: none;
   list-style: none;
   text-decoration: none;
+
+  ::selection {
+    background: rgba(0, 0, 0, 0.16);
+  }
 }
 
 ul {

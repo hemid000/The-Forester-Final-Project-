@@ -6,10 +6,7 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
-
-  ::selection {
-    background: rgba(0, 0, 0, 0.16);
-  }
+  background-attachment: fixed;
 
   .forester_header {
     h5,
@@ -63,6 +60,7 @@
         border: 1px solid rgba(255, 255, 255, 0.15);
         background-color: rgba(190, 208, 148, 0.8);
         transition: all 0.5s ease-out;
+
         &:hover {
           background-color: rgba(255, 255, 255, 0.15);
           color: #fff;
