@@ -4,6 +4,7 @@ import Story from "./Story/Story";
 import Service from "./Service/Service";
 import Gallery from "./Gallery/Gallery";
 import Creative from "./Creative/Creative";
+import Team from "./Team/Team";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Service />
       <Gallery />
       <Creative />
+      <Team />
     </>
   );
 };
