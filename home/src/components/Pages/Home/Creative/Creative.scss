@@ -1,0 +1,35 @@
+@import "./../../../../scss/style.scss";
+
+#creative {
+  padding: 70px 0;
+  background-color: $service_background_color;
+
+  .creative_box {
+    @extend %d-flex;
+    gap: 23px;
+    align-items: start;
+
+    .creative_icon {
+      svg {
+        font-size: 70px;
+        color: #000;
+      }
+    }
+
+    .creative_details {
+      h5 {
+        @extend %story_h5_copy;
+        color: rgba(0, 0, 0, 0.85);
+        letter-spacing: 1px;
+        text-align: start;
+        margin: 0;
+      }
+
+      p {
+        @extend %story_p_copy;
+        margin: 10px 0 0 0;
+        color: #8d8d8d;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import Forester from "./Forester/Forester";
 import Story from "./Story/Story";
 import Service from "./Service/Service";
 import Gallery from "./Gallery/Gallery";
+import Creative from "./Creative/Creative";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Story />
       <Service />
       <Gallery />
+      <Creative />
     </>
   );
 };

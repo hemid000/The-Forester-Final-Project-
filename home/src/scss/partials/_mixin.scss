@@ -138,6 +138,16 @@
   color: inherit;
 }
 
+%story_p_copy {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6em;
+  font-family: "Nunito Sans", sans-serif;
+  color: $story_read_more_color;
+  display: inline-block;
+  margin: 0;
+}
+
 // Service Section Extends
 
 %service_header_copy {
