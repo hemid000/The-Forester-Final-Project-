@@ -5,6 +5,7 @@ import Service from "./Service/Service";
 import Gallery from "./Gallery/Gallery";
 import Creative from "./Creative/Creative";
 import Team from "./Team/Team";
+import Counter from "./Counter/Counter";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Gallery />
       <Creative />
       <Team />
+      <Counter />
     </>
   );
 };

@@ -1,0 +1,27 @@
+@import "./../../../../scss/style.scss";
+
+#counter {
+  padding: 120px 0;
+  background-color: #000000;
+  .counter_box {
+    color: #fff;
+    text-align: center;
+    h2,
+    h5 {
+      @extend %story_h5_copy;
+      letter-spacing: 1.5px;
+      font-size: 11px;
+      font-weight: 600;
+      margin: 0;
+    }
+    h2 {
+      font-size: 50px;
+      margin-bottom: 3px;
+    }
+    p {
+      @extend %story_p_copy;
+      color: #fff;
+      margin: 10px 0 15px;
+    }
+  }
+}
