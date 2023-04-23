@@ -10,6 +10,7 @@ import Reviews from "./Reviews/Reviews";
 import Social from "./Social/Social";
 import Get from "./Get/Get";
 import Location from "./Location/Location";
+import Logo from "./Logo/Logo";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Social />
       <Get />
       <Location />
+      <Logo />
     </>
   );
 };

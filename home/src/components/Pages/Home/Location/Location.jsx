@@ -15,7 +15,6 @@ const Location = () => {
               id="gmap_canvas"
               src="https://maps.google.com/maps?width=926&amp;height=402&amp;hl=en&amp;q=%20London+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
-            <a href="https://maps-generator.com/">Maps Generator</a>
           </div>
         </div>
       </div>
