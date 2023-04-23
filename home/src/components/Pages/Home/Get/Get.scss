@@ -1,0 +1,86 @@
+@import "./../../../../scss/style.scss";
+
+#get {
+  padding: 130px 0;
+
+  .get_left {
+    h2 {
+      @extend %service_h2_copy;
+      line-height: 1.2em;
+      font-weight: 600;
+      font-size: 45px;
+      text-align: start;
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        @extend %d-flex;
+        padding-bottom: 30px;
+
+        svg {
+          font-size: 30px;
+          margin-right: 20px;
+        }
+
+        .get_details {
+          border-left: 1px solid rgba(0, 0, 0, 0.12);
+          padding-left: 10px;
+
+          h5 {
+            @extend %story_h5_copy;
+            margin-bottom: 5px;
+            text-align: start;
+            color: rgba(0, 0, 0, 0.85);
+          }
+
+          p {
+            @extend %story_p_copy;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+
+  .get_right {
+    form {
+      input,
+      textarea {
+        @extend %story_p_copy;
+        width: 100%;
+        height: 44px;
+        padding: 10px 18px;
+        color: #555;
+        background-color: rgb(242, 244, 236);
+        background-image: none;
+        border: none;
+        border-radius: 2px;
+        box-shadow: none;
+        margin-bottom: 15px;
+      }
+
+      textarea {
+        min-height: 100px;
+      }
+    }
+
+    .explore_now {
+      @extend %explore_now_copy;
+      text-align: start;
+
+      a {
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        background-color: transparent;
+        color: rgba(0, 0, 0, 0.85);
+        font-weight: 700;
+
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+          background-color: #000;
+        }
+      }
+    }
+  }
+}

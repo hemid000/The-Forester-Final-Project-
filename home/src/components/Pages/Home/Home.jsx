@@ -8,6 +8,7 @@ import Team from "./Team/Team";
 import Counter from "./Counter/Counter";
 import Reviews from "./Reviews/Reviews";
 import Social from "./Social/Social";
+import Get from "./Get/Get";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
       <Counter />
       <Reviews />
       <Social />
+      <Get />
     </>
   );
 };
