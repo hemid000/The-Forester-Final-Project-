@@ -7,6 +7,7 @@ import Creative from "./Creative/Creative";
 import Team from "./Team/Team";
 import Counter from "./Counter/Counter";
 import Reviews from "./Reviews/Reviews";
+import Social from "./Social/Social";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Team />
       <Counter />
       <Reviews />
+      <Social />
     </>
   );
 };

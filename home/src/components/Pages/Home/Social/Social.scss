@@ -1,0 +1,42 @@
+@import "./../../../../scss/style.scss";
+
+#social {
+  padding: 110px 0;
+  background-color: $service_background_color;
+
+  .social_header {
+    text-align: center;
+    padding-bottom: 90px;
+
+    h5 {
+      @extend %story_h5_copy;
+      margin: 0;
+      letter-spacing: 4px;
+    }
+
+    h2 {
+      @extend %service_h2_copy;
+      margin-bottom: 0;
+    }
+  }
+
+  .social_box {
+    @extend %d-flex-center;
+    flex-direction: column;
+    gap: 15px;
+
+    svg {
+      font-size: 5em;
+      color: #000000;
+    }
+
+    h5 {
+      @extend %story_h5_copy;
+      letter-spacing: 1px;
+      text-align: start;
+      margin: 0;
+      color: #000000;
+      opacity: 1;
+    }
+  }
+}
