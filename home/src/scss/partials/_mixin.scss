@@ -189,3 +189,11 @@
   margin: 10px 0 0 0;
   color: #8d8d8d;
 }
+
+// Footer Section Extends
+
+%footer_p_copy {
+  @extend %story_p_copy;
+  color: #fff;
+  margin: 10px 0 15px;
+}

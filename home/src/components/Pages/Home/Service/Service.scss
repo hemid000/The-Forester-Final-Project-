@@ -18,6 +18,12 @@
   }
 
   .service_box {
+    &:hover {
+      .service_ruler {
+        transform: translateY(-10px);
+      }
+    }
+
     .service_img {
       overflow: hidden;
       position: relative;
@@ -34,6 +40,7 @@
         top: calc((100% - 50px) / 2);
         left: calc((100% - 50px) / 2);
         color: #fff;
+        transition: 0.3s ease-in-out;
 
         svg {
           font-size: 50px;
@@ -71,10 +78,12 @@
 
   .explore_now {
     @extend %explore_now_copy;
+
     a {
       border: 1px solid rgba(0, 0, 0, 0.15);
       background-color: transparent;
       color: rgba(0, 0, 0, 0.85);
+
       &:hover {
         color: rgba(255, 255, 255, 1);
         background-color: #000;

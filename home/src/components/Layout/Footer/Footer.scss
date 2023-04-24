@@ -1,0 +1,60 @@
+@import "./../../../scss/style.scss";
+
+#footer {
+  padding: 100px 0;
+  background-color: #000000;
+
+  .footer_left {
+    ul {
+      @extend %d-flex;
+      gap: 30px;
+      padding: 0;
+      margin: 0;
+      li {
+        @extend %story_h5_copy;
+        letter-spacing: 1px;
+        font-weight: 500;
+        margin: 0;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 1);
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: gray;
+        }
+      }
+
+      p {
+        @extend %story_p_copy;
+        color: #fff;
+        margin: 30px 0 15px;
+
+        svg {
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .footer_right {
+    @extend %d-flex;
+    flex-direction: column;
+    align-items: end;
+
+    img {
+      @extend %img-contain;
+    }
+
+    .footer_p {
+      @extend %footer_p_copy;
+      text-align: end;
+    }
+
+    a {
+      @extend .footer_p;
+      color: $footer_a_copy;
+      margin: 0;
+    }
+  }
+}

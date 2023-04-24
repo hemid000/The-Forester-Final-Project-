@@ -11,8 +11,8 @@ const Social = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="social_header">
-              <h5>the crew</h5>
-              <h2>Team</h2>
+              <h5>READY TO COLLABORATE?</h5>
+              <h2>Social</h2>
             </div>
           </div>
         </div>
