@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Brand from "./Brand/Brand";
 
 const Branding = () => {
-    return (
-        <div>Branding</div>
-    )
-}
+  return (
+    <>
+      <Brand />
+    </>
+  );
+};
 
-export default Branding
+export default Branding;
