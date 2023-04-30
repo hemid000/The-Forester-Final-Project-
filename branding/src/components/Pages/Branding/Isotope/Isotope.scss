@@ -2,8 +2,10 @@
 
 #isotope {
   padding: 120px 0;
+
   .isotope_header {
     margin-bottom: 60px;
+
     p {
       @extend %story_p_copy;
       color: #000;
@@ -30,21 +32,26 @@
   .isotope_card {
     position: relative;
     overflow: hidden;
+    border-radius: 5px;
 
     &:hover {
       .isotope_details {
-        transform: translateX(0);
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
       }
 
       img {
-        transform: translateX(100%);
+        transform: perspective(2000px) translate3d(0px, 66px, 198px)
+          rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
+        border-radius: 5px;
+        will-change: transform;
       }
     }
 
     img {
       @extend %img-cover;
       width: 100%;
-      transition: transform 0.4s;
+      transition: 0.4s ease-in-out transform;
     }
 
     .isotope_details {
@@ -54,8 +61,13 @@
       width: 100%;
       height: 100%;
       background-color: rgb(166, 127, 127);
-      transition: transform 0.4s;
-      transform: translateX(-100%);
+      // transform: translateX(-100%);
+      transform: perspective(2000px) translate3d(0px, 66px, 198px)
+        rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
+      border-radius: 5px;
+      will-change: transform;
+      transition: 0.4s ease-in-out transform;
+      opacity: 0;
 
       .isotope_desc {
         position: absolute;
