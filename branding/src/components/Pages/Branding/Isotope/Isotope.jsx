@@ -32,7 +32,7 @@ const Isotope = () => {
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-4">
-            <ul className="gallery_lists">
+            <ul className="isotope_lists">
               <li onClick={() => setItems(Isotope_cards)}>all</li>
               <li onClick={() => filterItem("branding")}>branding</li>
               <li onClick={() => filterItem("digital")}>digital</li>
@@ -44,10 +44,10 @@ const Isotope = () => {
           {items &&
             items.map((el) => (
               <div className="col-lg-4" key={`isotope_id${el.id}`}>
-                <div className="gallery_card">
+                <div className="isotope_card">
                   <img src={el.img} alt="" />
-                  <div className="gallery_details">
-                    <div className="gallery_desc">
+                  <div className="isotope_details">
+                    <div className="isotope_desc">
                       <IoClose />
                       <h3>{el.name}</h3>
                       <h4>{el.desc}</h4>

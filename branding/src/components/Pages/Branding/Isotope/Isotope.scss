@@ -10,7 +10,7 @@
     }
   }
 
-  .gallery_lists {
+  .isotope_lists {
     @extend %d-flex-center;
     margin-bottom: 20px;
 
@@ -27,12 +27,12 @@
     }
   }
 
-  .gallery_card {
+  .isotope_card {
     position: relative;
     overflow: hidden;
 
     &:hover {
-      .gallery_details {
+      .isotope_details {
         transform: translateX(0);
       }
 
@@ -47,7 +47,7 @@
       transition: transform 0.4s;
     }
 
-    .gallery_details {
+    .isotope_details {
       position: absolute;
       top: 0;
       left: 0;
@@ -57,7 +57,7 @@
       transition: transform 0.4s;
       transform: translateX(-100%);
 
-      .gallery_desc {
+      .isotope_desc {
         position: absolute;
         top: 50%;
         color: #ffffff;
