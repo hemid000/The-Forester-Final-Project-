@@ -1,7 +1,12 @@
 import React from "react";
+import Packages from "./Packages/Packages";
 
 const Pricing = () => {
-  return <></>;
+  return (
+    <>
+      <Packages />
+    </>
+  );
 };
 
 export default Pricing;
