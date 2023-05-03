@@ -1,0 +1,80 @@
+@import "./../../../../scss/style.scss";
+
+#plan {
+  padding: 120px 0;
+
+  .plan_header {
+    h5 {
+      @extend %story_h5_copy;
+      margin: 0;
+      letter-spacing: 4px;
+    }
+
+    h2 {
+      @extend %service_h2_copy;
+      margin-bottom: 10px;
+    }
+
+    padding-bottom: 85px;
+  }
+
+  .plan_box {
+    text-align: center;
+    padding: 50px;
+    border: 4px solid #efefef;
+
+    .plan_money {
+      margin-bottom: 20px;
+
+      h3 {
+        font-weight: 600;
+        font-size: 27px;
+        letter-spacing: -1.5px;
+        margin-bottom: 5px;
+        color: #000;
+      }
+
+      h5 {
+        @extend %story_h5_copy;
+        margin: 0;
+        color: #000;
+        font-weight: 700;
+      }
+    }
+
+    .plan_name {
+      margin-bottom: 20px;
+
+      h2 {
+        @extend %service_h2_copy;
+        margin: 0;
+      }
+    }
+
+    .plan_lists {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+      li {
+        @extend %story_p_copy;
+        display: block;
+        color: #000;
+        margin-bottom: 10px;
+      }
+    }
+
+    .explore_now {
+      @extend %explore_now_copy;
+
+      a {
+        background-color: #bed094;
+        font-weight: 700;
+
+        &:hover {
+          background-color: #bed094d3;
+        }
+      }
+    }
+  }
+}
