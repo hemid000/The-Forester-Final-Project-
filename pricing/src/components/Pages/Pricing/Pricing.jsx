@@ -1,9 +1,9 @@
 import React from "react";
-import Packages from "./Packages/Packages";
 import Services from "./Services/Services";
 import Plan from "./Plan/Plan";
 import Reviews from "./Reviews/Reviews";
 import Get from "./Get/Get";
+import Packages from "./Packages/Package";
 
 const Pricing = () => {
   return (
