@@ -1,0 +1,44 @@
+@import "./../../../../scss/style.scss";
+
+#get {
+  background-color: #131212;
+  padding: 110px 0;
+
+  .get_header {
+    text-align: center;
+
+    h5 {
+      @extend %story_h5_copy;
+      margin: 0;
+      letter-spacing: 4px;
+      color: #8d8d8d;
+    }
+
+    h2 {
+      @extend %service_h2_copy;
+      margin-bottom: 0;
+      color: #fff;
+      padding-bottom: 30px;
+    }
+
+    #special_h5 {
+      color: gray;
+      letter-spacing: 1px;
+    }
+  }
+
+  .explore_now {
+    @extend %explore_now_copy;
+
+    a {
+      color: rgba(255, 255, 255, 0.85);
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+
+      &:hover {
+        color: rgba(255, 255, 255, 1);
+        background-color: #000;
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@ import Packages from "./Packages/Packages";
 import Services from "./Services/Services";
 import Plan from "./Plan/Plan";
 import Reviews from "./Reviews/Reviews";
+import Get from "./Get/Get";
 
 const Pricing = () => {
   return (
@@ -11,6 +12,7 @@ const Pricing = () => {
       <Services />
       <Plan />
       <Reviews />
+      <Get />
     </>
   );
 };
