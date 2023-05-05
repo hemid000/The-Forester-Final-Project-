@@ -4,6 +4,7 @@ import Filter from "./Filter/Filter";
 import Special from "./Special/Special";
 import Get from "./Get/Get";
 import Logo from "./Logo/Logo";
+import Reviews from "./Reviews/Reviews";
 
 const Fadeout = () => {
   return (
@@ -13,6 +14,7 @@ const Fadeout = () => {
       <Special />
       <Get />
       <Logo />
+      <Reviews />
     </>
   );
 };
