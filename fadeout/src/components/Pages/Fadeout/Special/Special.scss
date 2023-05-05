@@ -55,6 +55,15 @@
     bottom: 0;
   }
 
+  .swiper-pagination-bullet {
+    background-color: #fff;
+    opacity: 0.9;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: gray;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     &::after {
@@ -63,9 +72,8 @@
   }
 
   span {
-    width: 5px;
-    height: 5px;
-    margin: 2px;
-    background: rgba(118, 118, 118, 0.666);
+    width: 4px;
+    height: 4px;
+    margin: 4px;
   }
 }
