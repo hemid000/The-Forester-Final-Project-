@@ -301,3 +301,14 @@
     margin: 0 4px;
   }
 }
+
+// --------------  My_acc Page --------------
+
+%label_copy {
+  @extend %story_p_copy;
+  margin-bottom: 5px;
+  width: 100%;
+  font-weight: 500;
+  color: #222;
+  font-size: 15px;
+}
