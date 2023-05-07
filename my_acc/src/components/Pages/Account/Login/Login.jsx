@@ -40,7 +40,6 @@ const Login = () => {
                 <input type="text" required />
                 <label htmlFor="checkbox">
                   <input type="checkbox" id="checkbox" />
-                  <span>Remember me </span>
                 </label>
                 <div className="explore_now">
                   <a href="#">register</a>
