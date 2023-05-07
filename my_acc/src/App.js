@@ -1,9 +1,9 @@
-
+import Account from "./components/Pages/Account/Account";
 
 function App() {
   return (
     <div className="App">
-     sa
+      <Account />
     </div>
   );
 }
