@@ -242,3 +242,62 @@
     }
   }
 }
+
+// --------------  Shop Page --------------
+
+%shop_a_copy {
+  @extend %explore_now_copy;
+  text-align: start;
+
+  a {
+    padding: 3px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #0db8ca;
+    line-height: 2.4;
+    letter-spacing: 1px;
+    margin: 5px 0;
+    border: 2px solid;
+    opacity: 0.98;
+    border-radius: 100px;
+
+    &:hover {
+      background-color: $footer_a_copy;
+      transform: scale(1.04);
+    }
+  }
+}
+
+%filter_by_price_box_copy {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  margin-bottom: 40px;
+}
+
+%filter_by_price_h2_copy {
+  @extend %creative_h5_copy;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+%deleting_and_current_span_copy {
+  line-height: 2.4;
+  font-size: 0.8751em;
+  color: #222;
+  font-size: 13px;
+
+  &:first-child {
+    margin-left: 2px;
+    text-decoration: line-through;
+  }
+
+  &:nth-child(2) {
+    margin: 0 4px;
+  }
+}
