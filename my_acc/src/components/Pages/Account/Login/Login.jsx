@@ -38,9 +38,6 @@ const Login = () => {
                 <input type="text" required />
                 <label htmlFor="password">Password *</label>
                 <input type="text" required />
-                <label htmlFor="checkbox">
-                  <input type="checkbox" id="checkbox" />
-                </label>
                 <div className="explore_now">
                   <a href="#">register</a>
                 </div>
