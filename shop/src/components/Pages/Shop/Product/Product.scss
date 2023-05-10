@@ -1,0 +1,227 @@
+@import "./../../../../scss/style.scss";
+
+#product {
+  padding: 80px 0;
+
+  .card_left {
+    .sorting {
+      @extend %d-flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
+
+      p {
+        @extend %story_p_copy;
+        margin: 17px 0;
+        color: #000;
+      }
+
+      form {
+        select {
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          padding: 4px;
+          border-radius: 3px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .card_boxes {
+      .container {
+        padding: 0;
+      }
+
+      .box {
+        .box_img {
+          img {
+            @extend %img-contain;
+            width: 100%;
+          }
+        }
+
+        .box_details {
+          h2 {
+            @extend %story_p_copy;
+            padding: 20px 0 0 0;
+            margin: 0;
+            font-size: 1em;
+            font-weight: 700;
+            line-height: 1.1;
+            color: #bed094;
+            letter-spacing: -0.9px;
+          }
+
+          span,
+          del {
+            @extend %story_p_copy;
+            color: #77a464;
+            font-weight: 700;
+            margin-bottom: 0.3em;
+            font-size: 0.857em;
+          }
+
+          span {
+            .non_current_money {
+              text-decoration: line-through;
+              padding-right: 5px;
+              font-weight: 400;
+            }
+
+            .current_money {
+              color: #537345;
+              text-decoration: underline;
+
+              .symbol_span {
+                @extend .current_money;
+              }
+            }
+          }
+
+          .explore_now {
+            @extend %explore_now_copy;
+            text-align: start;
+
+            a {
+              padding: 3px 20px;
+              font-family: "Poppins", sans-serif;
+              font-size: 10px;
+              font-weight: 600;
+              color: #fff;
+              background-color: #0db8ca;
+              line-height: 2.4;
+              letter-spacing: 1px;
+              margin: 5px 0;
+              border: 2px solid;
+              opacity: 0.98;
+              border-radius: 100px;
+
+              &:hover {
+                background-color: $footer_a_copy;
+                transform: scale(1.04);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card_right {
+    .filter_by_price {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 20px 30px;
+      margin-bottom: 40px;
+
+      h2 {
+        @extend %creative_h5_copy;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: #000;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .MuiSlider-colorPrimary {
+        color: #a46497;
+      }
+
+      .MuiSlider-rail,
+      .MuiSlider-track {
+        background-color: #a46497;
+        height: 7px;
+        opacity: 1;
+      }
+
+      .MuiSlider-thumb {
+        background-color: #a46497;
+        width: 14px;
+        height: 14px;
+      }
+
+      .explore_now {
+        @extend %shop_a_copy;
+        @extend %d-flex;
+        justify-content: space-between;
+
+        a {
+          background-color: #333;
+          line-height: 1.5;
+          font-size: 11px;
+          padding: 7px 13px;
+        }
+
+        span {
+          @extend %story_p_copy;
+          line-height: 2.4;
+          font-size: 0.8751em;
+          color: #222;
+          font-size: 13px;
+
+          &:first-child {
+            margin-left: 2px;
+          }
+
+          &:nth-child(2) {
+            margin: 0 4px;
+          }
+        }
+      }
+    }
+
+    .products {
+      @extend %filter_by_price_box_copy;
+
+      h2 {
+        @extend %filter_by_price_h2_copy;
+        margin-bottom: 15px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+        padding-bottom: 10px;
+
+        li {
+          @extend %d-flex;
+          justify-content: space-between;
+
+          p {
+            margin: 0;
+            font-size: 12px;
+            font-weight: 300;
+            letter-spacing: 0.2px;
+            line-height: 8px;
+            font-family: "Poppins", sans-serif;
+          }
+
+          span {
+            @extend %story_p_copy;
+            font-size: 0.8751em;
+            color: #222;
+            font-size: 13px;
+
+            &:first-child {
+              margin-left: 2px;
+            }
+
+            .non_current_money {
+              text-decoration: line-through;
+            }
+
+            .current_money {
+              margin-left: 4px;
+              text-decoration: underline;
+            }
+          }
+
+          img {
+            @extend %img-contain;
+            width: 32px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
