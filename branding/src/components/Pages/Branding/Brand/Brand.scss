@@ -1,0 +1,43 @@
+@import "./../../../../scss/style.scss";
+
+#brand {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  background-attachment: fixed;
+  overflow: hidden;
+  .brand_header {
+    @extend %d-flex-center;
+    flex-direction: column;
+    width: 100%;
+    @extend %explore_now_copy;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+
+    h2 {
+      @extend %service_h2_copy;
+      color: #fff;
+      margin: 0;
+    }
+
+    p {
+      @extend %story_p_copy;
+      color: #d2dfb5;
+      font-size: 11px;
+      margin: 10px 0;
+      font-weight: 600;
+
+      span {
+        color: #727d59;
+      }
+    }
+
+    a {
+      font-weight: 600;
+    }
+  }
+}

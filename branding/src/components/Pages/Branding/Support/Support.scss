@@ -1,0 +1,40 @@
+@import "./../../../../scss/style.scss";
+
+#creative {
+  padding: 0 0 70px 0;
+
+  .creative_box {
+    @extend %d-flex;
+    gap: 40px;
+    align-items: start;
+    padding-bottom: 50px;
+
+    .creative_icon {
+      svg {
+        font-size: 50px;
+        color: #000;
+        font-weight: 400;
+      }
+    }
+
+    .creative_details {
+      h5 {
+        @extend %story_h5_copy;
+        color: rgba(0, 0, 0, 0.85);
+        letter-spacing: 1px;
+        text-align: start;
+        margin: 0;
+      }
+
+      p {
+        @extend %story_p_copy;
+        font-family: "Poppins", sans-serif;
+        margin: 10px 0 0 0;
+        color: #222;
+        letter-spacing: 0.2px;
+        font-size: 12px;
+        font-weight: 300;
+      }
+    }
+  }
+}

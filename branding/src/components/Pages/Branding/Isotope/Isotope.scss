@@ -1,0 +1,101 @@
+@import "./../../../../scss/style.scss";
+
+#isotope {
+  padding: 120px 0;
+
+  .isotope_header {
+    margin-bottom: 60px;
+
+    p {
+      @extend %story_p_copy;
+      color: #000;
+    }
+  }
+
+  .isotope_lists {
+    @extend %d-flex-center;
+    margin-bottom: 20px;
+
+    li {
+      @extend %story_h5_copy;
+      padding: 0 14px;
+      font: 600 11px "Poppins", sans-serif;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #000;
+      margin: 0 3px 10px 3px;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  .isotope_card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &:hover {
+      .isotope_details {
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+      }
+
+      img {
+        transform: perspective(2000px) translate3d(0px, 66px, 198px)
+          rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
+        border-radius: 5px;
+        will-change: transform;
+      }
+    }
+
+    img {
+      @extend %img-cover;
+      width: 100%;
+      transition: 0.4s ease-in-out transform;
+    }
+
+    .isotope_details {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(166, 127, 127);
+      // transform: translateX(-100%);
+      transform: perspective(2000px) translate3d(0px, 66px, 198px)
+        rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
+      border-radius: 5px;
+      will-change: transform;
+      transition: 0.4s ease-in-out transform;
+      opacity: 0;
+
+      .isotope_desc {
+        position: absolute;
+        top: 50%;
+        color: #ffffff;
+        text-align: center;
+        width: 100%;
+
+        svg {
+          font-size: 10px;
+        }
+
+        h3 {
+          font-weight: 600;
+          font-size: 27px;
+          letter-spacing: -1.5px;
+          line-height: 1.4;
+        }
+
+        h4 {
+          font-size: 9.5px;
+          font-weight: 600;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+          line-height: 1;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  }
+}
