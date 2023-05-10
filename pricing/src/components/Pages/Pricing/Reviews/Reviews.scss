@@ -1,0 +1,77 @@
+@import "./../../../../scss/style.scss";
+
+#reviews {
+  padding: 120px 0;
+  background-blend-mode: color;
+  background-attachment: fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  background: rgba(0, 0, 0, 0.35);
+
+  .col-lg-6 {
+    margin: 0 auto;
+  }
+
+  .reviews_header {
+    text-align: center;
+    color: #fff;
+
+    h5 {
+      @extend %story_h5_copy;
+      margin: 0;
+      letter-spacing: 4px;
+    }
+
+    h2 {
+      @extend %service_h2_copy;
+      color: #fff;
+    }
+  }
+
+  .reviews_box {
+    text-align: center;
+    cursor: grab;
+
+    h2 {
+      color: #fff;
+      letter-spacing: 0.2px;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.65em;
+      font-family: "Raleway", sans-serif;
+      text-transform: none;
+      padding-bottom: 20px;
+    }
+
+    p {
+      @extend %story_p_copy;
+      color: #fff;
+      font-weight: 300;
+      margin: 10px 0 5px;
+    }
+
+    h5 {
+      @extend %story_h5_copy;
+      color: #fff;
+      letter-spacing: 1.5px;
+      font-size: 11px;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+
+  .swiper-slide {
+    padding: 10px 0 15px 0;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+
+  span {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+    background: #d6d6d6;
+  }
+}
