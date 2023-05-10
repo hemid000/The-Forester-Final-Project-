@@ -1,0 +1,5 @@
+@import "./../../../../scss/style.scss";
+
+#cont {
+  @extend %package_section_copy;
+}
