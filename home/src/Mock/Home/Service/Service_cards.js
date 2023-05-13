@@ -10,7 +10,7 @@ import service_img8 from "./../../../assets/Home/Service_cards/service-photo8.av
 const Service_cards = [
   {
     id: Math.random(),
-    name: "Web Design",
+    name: "Branding",
     desc: "Crafting visually stunning designs that will leave you speechless",
     img: `${service_img1}`,
   },
@@ -28,31 +28,31 @@ const Service_cards = [
   },
   {
     id: Math.random(),
-    name: "Marketing",
+    name: "Pricing",
     desc: "We'll advertise your product using latest and unique fresh marketing methods.",
     img: `${service_img4}`,
   },
   {
     id: Math.random(),
-    name: "Web Design",
+    name: "Classic",
     desc: "We'll advertise your product using latest and unique fresh marketing methods.",
     img: `${service_img5}`,
   },
   {
     id: Math.random(),
-    name: "Marketing",
+    name: "Shopping",
     desc: "We'll advertise your product using latest and unique fresh marketing methods.",
     img: `${service_img6}`,
   },
   {
     id: Math.random(),
-    name: "Web Design",
+    name: "Team1",
     desc: "We'll advertise your product using latest and unique fresh marketing methods.",
     img: `${service_img7}`,
   },
   {
     id: Math.random(),
-    name: "Marketing",
+    name: "Team2",
     desc: "We'll advertise your product using latest and unique fresh marketing methods.",
     img: `${service_img8}`,
   },

@@ -17,6 +17,41 @@
     }
   }
 
+  .service_input {
+    @extend %d-flex;
+    justify-content: flex-end;
+    @extend %service_search_copy;
+
+    form {
+      @extend %d-flex;
+      margin-bottom: 10px;
+      border: 1px solid #bed094;
+      background-color: transparent;
+      padding: 7px 18px;
+      border-radius: 3px;
+
+      input,
+      span {
+        height: auto;
+        padding: 0;
+
+        &:first-child {
+          width: 100%;
+          margin-bottom: 0;
+          background-color: transparent;
+          &::placeholder {
+            color: #000;
+          }
+        }
+      }
+
+      span {
+        @extend %d-flex;
+        color: #000;
+      }
+    }
+  }
+
   .service_box {
     &:hover {
       .service_ruler {
