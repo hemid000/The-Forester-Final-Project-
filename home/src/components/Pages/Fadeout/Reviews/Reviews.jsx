@@ -10,7 +10,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import "./Reviews.scss";
-import logo from "../../../../assets/Home/Reviews/reviews-1.jpg";
+import logo from "../../../../assets/Fadeout/Reviews/reviews-1.jpg";
 const Reviews = () => {
   return (
     <section

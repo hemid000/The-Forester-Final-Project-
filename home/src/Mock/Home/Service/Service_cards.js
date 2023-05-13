@@ -1,11 +1,11 @@
-import service_img1 from "./../../../assets/Service_cards/service-photo1.avif";
-import service_img2 from "./../../../assets/Service_cards/service-photo2.avif";
-import service_img3 from "./../../../assets/Service_cards/service-photo3.avif";
-import service_img4 from "./../../../assets/Service_cards/service-photo4.avif";
-import service_img5 from "./../../../assets/Service_cards/service-photo5.avif";
-import service_img6 from "./../../../assets/Service_cards/service-photo6.avif";
-import service_img7 from "./../../../assets/Service_cards/service-photo7.avif";
-import service_img8 from "./../../../assets/Service_cards/service-photo8.avif";
+import service_img1 from "./../../../assets/Home/Service_cards/service-photo1.avif";
+import service_img2 from "./../../../assets/Home/Service_cards/service-photo2.avif";
+import service_img3 from "./../../../assets/Home/Service_cards/service-photo3.avif";
+import service_img4 from "./../../../assets/Home/Service_cards/service-photo4.avif";
+import service_img5 from "./../../../assets/Home/Service_cards/service-photo5.avif";
+import service_img6 from "./../../../assets/Home/Service_cards/service-photo6.avif";
+import service_img7 from "./../../../assets/Home/Service_cards/service-photo7.avif";
+import service_img8 from "./../../../assets/Home/Service_cards/service-photo8.avif";
 
 const Service_cards = [
   {

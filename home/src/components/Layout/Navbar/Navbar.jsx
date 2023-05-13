@@ -5,7 +5,7 @@ import { ImFacebook } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
 import { BsVimeo } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
-import logo from "./../../../../src/assets/Logo_img/logo.png";
+import logo from "./../../../../src/assets/Home/Logo_img/logo.png";
 
 import MockNav_home1 from "../../../Mock/Navbar/MockNav_home/MockNav_home1";
 import MockNav_home2 from "../../../Mock/Navbar/MockNav_home/MockNav_home2";

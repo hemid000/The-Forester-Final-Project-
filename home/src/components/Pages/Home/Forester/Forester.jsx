@@ -1,6 +1,6 @@
 import React from "react";
 import "./../Forester/Forester.scss";
-import background_img from "./../../../../assets/Background_img/bg-1.jpg";
+import background_img from "./../../../../assets/Home/Background_img/bg-1.jpg";
 
 const Forester = () => {
   return (

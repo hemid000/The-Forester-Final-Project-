@@ -3,7 +3,7 @@ import "./Footer.scss";
 import { IoMdCall } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";
 import { ImHome3 } from "react-icons/im";
-import logo from "./../../../assets/Logo_img/logo.png";
+import logo from "./../../../assets/Home/Logo_img/logo.png";
 const Footer = () => {
   return (
     <section id="footer">

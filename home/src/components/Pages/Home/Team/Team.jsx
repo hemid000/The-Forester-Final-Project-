@@ -1,8 +1,8 @@
 import React from "react";
 import "./Team.scss";
-import team1_img from "./../../../../assets/Team/team-1.jpg";
-import team2_img from "./../../../../assets/Team/team-2.jpg";
-import team3_img from "./../../../../assets/Team/team-3.jpg";
+import team1_img from "./../../../../assets/Home/Team/team-1.jpg";
+import team2_img from "./../../../../assets/Home/Team/team-2.jpg";
+import team3_img from "./../../../../assets/Home/Team/team-3.jpg";
 import { ImFacebook } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
 import { BsVimeo } from "react-icons/bs";
