@@ -1,13 +1,14 @@
 @import "./../../../../scss/style.scss";
 
 #creative {
-  padding: 70px 0;
+  padding: 100px 0 !important;
   background-color: $service_background_color;
 
   .creative_box {
     @extend %d-flex;
     gap: 23px;
     align-items: start;
+    padding-bottom: 0 !important;
 
     .creative_icon {
       svg {

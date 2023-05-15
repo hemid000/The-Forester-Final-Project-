@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Service.scss";
+import Fade from 'react-reveal/Fade';
 import Service_cards from "../../../../Mock/Home/Service/Service_cards";
 import { TfiRulerPencil } from "react-icons/tfi";
 import { AiOutlineSearch } from "react-icons/ai";
@@ -50,21 +51,23 @@ const Service = () => {
                   : e.name.toLowerCase().includes(search);
               })
               .map((element) => (
-                <div className="col-lg-4" key={`service_id${element.id}`}>
-                  <div className="service_box">
-                    <div className="service_img">
-                      <img src={element.img} alt="" />
-                      <div className="service_ruler">
-                        <TfiRulerPencil />
+                <Fade bottom distance="10%" duration={1500} key={`service_id${element.id}`}>
+                  <div className="col-lg-4">
+                    <div className="service_box">
+                      <div className="service_img">
+                        <img src={element.img} alt="" />
+                        <div className="service_ruler">
+                          <TfiRulerPencil />
+                        </div>
+                      </div>
+                      <div className="service_details">
+                        <h3>{element.name}</h3>
+                        <p>{element.desc}</p>
+                        <h5>read more</h5>
                       </div>
                     </div>
-                    <div className="service_details">
-                      <h3>{element.name}</h3>
-                      <p>{element.desc}</p>
-                      <h5>read more</h5>
-                    </div>
                   </div>
-                </div>
+                </Fade>
               ))}
         </div>
         <div className="row justify-content-center mt-5">

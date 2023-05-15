@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./Navbar.scss";
 
 import { ImFacebook } from "react-icons/im";
@@ -27,30 +29,23 @@ const Navbar = () => {
                     Home one page
                     <i className="fa-solid fa-angle-down"></i>
                     <ul className="hover2_ul">
-                      {MockNav_home1 &&
-                        MockNav_home1.map((element) => (
-                          <li
-                            className="hover2_lists"
-                            key={`navbar_id${element.id}`}
-                          >
-                            {element.name}
-                          </li>
-                        ))}
+                      <li className="hover2_lists">Home main one page</li>
+                      <li className="hover2_lists">Home text slider onepage</li>
+                      <li className="hover2_lists">Home youtube onepage</li>
+                      <li className="hover2_lists">Home slider onepage</li>
                     </ul>
                   </li>
                   <li className="hover_lists_home">
                     Home multi page
                     <i className="fa-solid fa-angle-down"></i>
                     <ul className="hover2_ul">
-                      {MockNav_home2 &&
-                        MockNav_home2.map((element) => (
-                          <li
-                            className="hover2_lists"
-                            key={`navbar_id${element.id}`}
-                          >
-                            {element.name}
-                          </li>
-                        ))}
+                      <li className="hover2_lists">Home main</li>
+                      <li className="hover2_lists">Home slider</li>
+                      <li className="hover2_lists">Home youtube</li>
+                      <li className="hover2_lists">Home text slider</li>
+                      <li className="hover2_lists">Home light bg</li>
+                      <li className="hover2_lists">Home Youtube 2</li>
+                      <li className="hover2_lists">Home dark</li>
                     </ul>
                   </li>
                 </ul>
@@ -60,10 +55,16 @@ const Navbar = () => {
                 <ul className="hover_ul_home">
                   <li className="hover_lists_home">Team1</li>
                   <li className="hover_lists_home">Team2</li>
-                  <li className="hover_lists_home">Pricing</li>
-                  <li className="hover_lists_home">Branding</li>
+                  <li className="hover_lists_home">
+                    <Link to={'./pricing'} className="link">Pricing</Link>
+                  </li>
+                  <li className="hover_lists_home">
+                    <Link to={'./branding'} className="link">Branding</Link>
+                  </li>
                   <li className="hover_lists_home">Web Design</li>
-                  <li className="hover_lists_home">Contact</li>
+                  <li className="hover_lists_home">
+                    <Link to={'./contact'} className="link">Contact</Link>
+                  </li>
                 </ul>
               </li>
               <li id="portfolio_li">

@@ -1,7 +1,8 @@
 @import "./../../../../scss/style.scss";
 
 #get {
-  padding: 130px 0;
+  padding: 130px 0 !important;
+  background-color: white !important;
 
   .get_left {
     h2 {
@@ -46,6 +47,7 @@
 
   .get_right {
     form {
+
       input,
       textarea {
         @extend %story_p_copy;

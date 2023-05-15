@@ -75,6 +75,11 @@
           transition: 0.3s ease-in-out;
           color: $navbar_background_li_color;
 
+          .link {
+            color: $navbar_background_li_color !important;
+            transition: 0.3s ease-in-out;
+          }
+
           .hover2_ul {
             @extend .hover_ul_home;
             top: 0;
@@ -101,6 +106,9 @@
             .hover2_ul {
               visibility: visible !important;
               opacity: 1;
+            }
+            .link {
+              color: #fff;
             }
           }
         }
