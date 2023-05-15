@@ -52,7 +52,7 @@ const Service = () => {
               })
               .map((element) => (
                 <Fade bottom distance="10%" duration={1500} key={`service_id${element.id}`}>
-                  <div className="col-lg-4">
+                  <div className="col-lg-4 col-md-6 col-sm-12">
                     <div className="service_box">
                       <div className="service_img">
                         <img src={element.img} alt="" />
