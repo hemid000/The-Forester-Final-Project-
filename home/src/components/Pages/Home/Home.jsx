@@ -25,6 +25,8 @@ const Home = () => {
       <Reviews />
       <Social />
       <Get />
+      <Location />
+      <Logo />
     </>
   );
 };
