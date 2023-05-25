@@ -14,7 +14,7 @@ const Counter = () => {
           onExit={() => setCounterOn(false)}
         >
           <div className="row">
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="counter_box">
                 <h2>
                   {counterOn && (
@@ -28,7 +28,7 @@ const Counter = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="counter_box">
                 <h2>
                   {counterOn && (
@@ -42,7 +42,7 @@ const Counter = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="counter_box">
                 <h2>
                   {counterOn && (
@@ -56,7 +56,7 @@ const Counter = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-3">
+            <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="counter_box">
                 <h2>
                   {counterOn && (

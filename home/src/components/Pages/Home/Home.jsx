@@ -20,6 +20,7 @@ const Home = () => {
       <Service />
       <Gallery />
       <Creative />
+      <Counter />
     </>
   );
 };
