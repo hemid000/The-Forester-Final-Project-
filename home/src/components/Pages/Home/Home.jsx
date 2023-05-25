@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       <Forester />
-     
+      <Story />
     </>
   );
 };
