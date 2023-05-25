@@ -23,7 +23,7 @@ const Team = () => {
         </div>
         <div className="row">
           <Fade top distance="10%" duration={1500}>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team_box">
                 <img src={team1_img} alt="" />
                 <div className="team_details">
@@ -43,7 +43,7 @@ const Team = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team_box">
                 <img src={team2_img} alt="" />
                 <div className="team_details">
@@ -63,7 +63,7 @@ const Team = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
+            <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team_box">
                 <img src={team3_img} alt="" />
                 <div className="team_details">

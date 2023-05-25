@@ -18,6 +18,9 @@
   }
 
   .team_box {
+    @media (max-width: 992px) {
+      margin-bottom: 30px;
+    }
     position: relative;
     overflow: hidden;
 
