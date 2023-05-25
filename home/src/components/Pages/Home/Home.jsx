@@ -22,6 +22,8 @@ const Home = () => {
       <Creative />
       <Team />
       <Counter />
+      <Reviews />
+      <Social />
     </>
   );
 };

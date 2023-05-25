@@ -17,25 +17,25 @@ const Social = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="social_box">
               <AiOutlineInstagram />
               <h5>instagram</h5>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="social_box">
               <ImFacebook />
               <h5>facebook</h5>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="social_box">
               <BsTwitter />
               <h5>twitter</h5>
             </div>
           </div>
-          <div className="col-lg-3">
+          <div className="col-lg-3 col-md-6 col-sm-12">
             <div className="social_box">
               <BsVimeo />
               <h5>vimeo</h5>
