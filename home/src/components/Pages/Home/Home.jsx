@@ -24,6 +24,7 @@ const Home = () => {
       <Counter />
       <Reviews />
       <Social />
+      <Get />
     </>
   );
 };

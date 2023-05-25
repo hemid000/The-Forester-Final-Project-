@@ -23,7 +23,7 @@ const Get = () => {
     <section id="get">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="get_left">
               <h2>Get In Touch</h2>
               <ul>
@@ -51,7 +51,7 @@ const Get = () => {
               </ul>
             </div>
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-8 col-md-6 col-sm-12">
             <div className="get_right">
               <form action="#">
                 <input type="text" placeholder="Name" required />
