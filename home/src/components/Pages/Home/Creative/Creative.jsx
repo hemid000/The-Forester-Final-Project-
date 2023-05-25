@@ -9,7 +9,7 @@ const Creative = () => {
     <section id="creative">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-4 col-sm-12">
             <div className="creative_box">
               <div className="creative_icon">
                 <IoBulbOutline />
@@ -23,7 +23,7 @@ const Creative = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-4 col-sm-12">
             <div className="creative_box">
               <div className="creative_icon">
                 <GiTie />
@@ -37,7 +37,7 @@ const Creative = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-4 col-sm-12">
             <div className="creative_box">
               <div className="creative_icon">
                 <GiSportMedal />

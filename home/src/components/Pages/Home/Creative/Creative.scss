@@ -4,6 +4,12 @@
   padding: 100px 0 !important;
   background-color: $service_background_color;
 
+  .row {
+    @media (max-width: 768px) {
+      gap: 50px;
+    }
+  }
+
   .creative_box {
     @extend %d-flex;
     gap: 23px;

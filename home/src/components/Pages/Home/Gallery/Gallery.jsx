@@ -39,7 +39,7 @@ const Gallery = () => {
           {items &&
             items.map((el) => (
               <Zoom bottom distance="90%" duration={1000} key={`gallery_id${el.id}`}>
-                <div className="col-lg-6">
+                <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="gallery_card">
                     <img src={el.img} alt="" />
                     <div className="gallery_details">

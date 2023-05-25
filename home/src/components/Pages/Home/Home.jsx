@@ -17,6 +17,9 @@ const Home = () => {
     <>
       <Forester />
       <Story />
+      <Service />
+      <Gallery />
+      <Creative />
     </>
   );
 };
