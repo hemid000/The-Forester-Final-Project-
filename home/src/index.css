@@ -1,0 +1,11 @@
+/* :root {
+    --body_background : default;
+    --link_color: default;
+
+}
+
+
+[data-theme = "dark"] {
+    --body_background : black;
+    --link_color: white;
+} */

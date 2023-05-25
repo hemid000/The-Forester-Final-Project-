@@ -1,11 +1,13 @@
 @import "./../../../scss/style.scss";
 
 #nav {
-  position: absolute;
+  position: fixed;
   width: 100%;
   border-bottom: 1px solid $border_color;
+  z-index: 999;
 
-  .col-md-5 {
+  .col-md-5,
+  .col-md-2 {
     z-index: 6;
 
     @media (max-width: 992px) {
@@ -257,6 +259,8 @@
         color: $main_color;
       }
     }
+
+    .dark_button {}
   }
 }
 
@@ -264,4 +268,8 @@
   padding-top: 30px !important;
   padding-bottom: 30px !important;
   height: auto !important;
+}
+
+.active {
+  background-color: #bed094;
 }
