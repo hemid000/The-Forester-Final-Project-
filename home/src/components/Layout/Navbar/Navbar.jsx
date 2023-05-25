@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./Navbar.scss";
@@ -7,6 +7,7 @@ import { ImFacebook } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
 import { BsVimeo } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
+import { HiBars3 } from "react-icons/hi2";
 import logo from "./../../../../src/assets/Home/Logo_img/logo.png";
 
 import MockNav_home1 from "../../../Mock/Navbar/MockNav_home/MockNav_home1";
@@ -16,6 +17,13 @@ import MockNav_portfolio2 from "../../../Mock/Navbar/MockNav_portfolio/MockNav_p
 import MockNav_portfolio3 from "../../../Mock/Navbar/MockNav_portfolio/MockNav_portfolio3";
 
 const Navbar = () => {
+  const [btnState, setBtnState] = useState(false)
+
+  function handleClick() {
+    setBtnState(btnState => !btnState);
+  }
+
+  let toggleClassCheck = btnState ? ' toggle_class' : '';
   return (
     <nav id="nav">
       <div className="container">
@@ -222,6 +230,17 @@ const Navbar = () => {
           <div className="col-md-2">
             <div className="nav_logo">
               <img src={logo} alt="" />
+            </div>
+            <div className="nav_bar" onClick={handleClick}>
+              <HiBars3 />
+              <div className={`nav1_mobile${toggleClassCheck}`}>
+                <ul>
+                  <li>Home</li>
+                  <li>Home</li>
+                  <li>Home</li>
+                  <li>Home</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div className="col-md-5">

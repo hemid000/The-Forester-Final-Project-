@@ -5,8 +5,27 @@
   width: 100%;
   border-bottom: 1px solid $border_color;
 
+  // .container {
+  //   @media (max-width: 992px) {
+
+  //   }
+  // }
   .col-md-5 {
     z-index: 6;
+
+    @media (max-width: 992px) {
+      display: none;
+    }
+  }
+
+  .col-md-2 {
+    @media (max-width: 992px) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
   }
 
   ul,
@@ -107,6 +126,7 @@
               visibility: visible !important;
               opacity: 1;
             }
+
             .link {
               color: #fff;
             }
@@ -124,11 +144,101 @@
   }
 
   .nav_logo {
+    @media (max-width: 992px) {
+      padding: 8px 0;
+    }
+
     @extend %d-flex-center;
     height: 100%;
 
     img {
       @extend %img-contain;
+    }
+  }
+
+  .nav_bar {
+    display: none;
+
+    .nav1_mobile {
+      // transform: translateX(100%);
+      background-color: #000;
+      padding: 30px 8%;
+      position: fixed;
+      z-index: 100;
+      top: 60px;
+      right: 0;
+      overflow: scroll;
+      height: 0;
+      padding: 0;
+      transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+      overflow: hidden;
+      width: 100%;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        padding-left: 8%;
+
+        li {
+          @extend %d-flex;
+          justify-content: space-between;
+          font-size: 1.05em;
+          margin: 0;
+          line-height: 2.6em;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+          color: #bed094;
+
+          &:hover {
+            color: #dc2828;
+          }
+
+          // &:first-child {
+          //   // margin-bottom: 30px;
+          // }
+
+          svg {
+            font-size: 38px;
+            cursor: pointer;
+          }
+
+          .plus_navbar {
+            font-size: 15px;
+            transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+          }
+        }
+
+        .elements_portfolio,
+        .portfolio_portfolio {
+          height: 0;
+          overflow: hidden;
+          transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+
+          li {
+            transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+
+            &:first-child {
+              display: none;
+            }
+
+            li {
+              padding-left: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      display: block;
+    }
+
+    svg {
+      font-weight: 700;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
     }
   }
 
@@ -153,4 +263,10 @@
       }
     }
   }
+}
+
+.toggle_class {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  height: auto !important;
 }

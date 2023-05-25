@@ -16,17 +16,7 @@ const Home = () => {
   return (
     <>
       <Forester />
-      <Story />
-      <Service />
-      <Gallery />
-      <Creative />
-      <Team />
-      <Counter />
-      <Reviews />
-      <Social />
-      <Get />
-      <Location />
-      <Logo />
+     
     </>
   );
 };
