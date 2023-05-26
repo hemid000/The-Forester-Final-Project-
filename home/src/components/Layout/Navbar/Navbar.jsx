@@ -7,7 +7,9 @@ import { ImFacebook } from "react-icons/im";
 import { BsTwitter } from "react-icons/bs";
 import { BsVimeo } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
+import { IoCloseSharp } from "react-icons/io5";
 import { HiBars3 } from "react-icons/hi2";
+import { AiOutlinePlus } from "react-icons/ai";
 import logo from "./../../../../src/assets/Home/Logo_img/logo.png";
 import Darkmode1 from "../../DarkMode/Darkmode1"
 const Navbar = () => {
@@ -28,6 +30,71 @@ const Navbar = () => {
       setNavbar(true)
     }
     else setNavbar(false)
+  }
+
+  function OpenPages() {
+    const Element = document.querySelector("#mob_page");
+    const Pluse5Navbar = document.querySelector(".plus5_navbar");
+    const Element_Section = document.querySelector(".pages_portfolio");
+    Element_Section.style.height = "auto";
+    Pluse5Navbar.style.rotate = "135deg";
+    if (Element.classList.contains("nav_remove")) {
+      Element.classList.remove("nav_remove");
+      Pluse5Navbar.style.transform = "translateY(0px)";
+      Element_Section.style.height = "auto";
+    } else {
+      Element.classList.add("nav_remove");
+      Element_Section.style.height = "0";
+      Pluse5Navbar.style.rotate = "0deg";
+    }
+  }
+  function OpenPortfolio() {
+    const Element = document.querySelector("#mob_port");
+    const Element_Section = document.querySelector(".portfolio_portfolio");
+    const PluseNavbar = document.querySelector(".plus2_navbar");
+    Element_Section.style.height = "auto";
+    PluseNavbar.style.rotate = "135deg";
+    if (Element.classList.contains("nav_remove")) {
+      Element.classList.remove("nav_remove");
+      Element_Section.style.height = "auto";
+      PluseNavbar.style.rotate = "135deg";
+    } else {
+      Element.classList.add("nav_remove");
+      Element_Section.style.height = "0";
+      PluseNavbar.style.rotate = "0deg";
+    }
+  }
+  function OpenShop() {
+    const Shop = document.querySelector("#mob_shop");
+    const Element_Section = document.querySelector(".shop_portfolio");
+    const Pluse3Navbar = document.querySelector(".plus3_navbar");
+    Element_Section.style.height = "auto";
+    Pluse3Navbar.style.rotate = "135deg";
+    if (Shop.classList.contains("nav_remove")) {
+      Shop.classList.remove("nav_remove");
+      Element_Section.style.height = "auto";
+      Pluse3Navbar.style.rotate = "135deg";
+    } else {
+      Shop.classList.add("nav_remove");
+      Element_Section.style.height = "0";
+      Pluse3Navbar.style.rotate = "0deg";
+    }
+  }
+  function OpenBlog() {
+    const Blog = document.querySelector("#mob_blog");
+    const Element_Section = document.querySelector(".blog_portfolio");
+    const PluseNavbar = document.querySelector(".plus4_navbar");
+    Element_Section.style.height = "auto";
+    PluseNavbar.style.rotate = "135deg";
+    if (Blog.classList.contains("nav_remove")) {
+      Blog.classList.remove("nav_remove");
+      Element_Section.style.height = "auto";
+      PluseNavbar.style.rotate = "135deg";
+    } else {
+      Blog.classList.add("nav_remove");
+      Element_Section.style.height = "0";
+      PluseNavbar.style.rotate = "0deg";
+    }
   }
   window.addEventListener('scroll', changeBackgroundColor)
   return (
@@ -274,9 +341,48 @@ const Navbar = () => {
               <div className={`nav1_mobile${toggleClassCheck}`}>
                 <ul>
                   <li>Home</li>
-                  <li>Home</li>
-                  <li>Home</li>
-                  <li>Home</li>
+                  <li id="mob_page" className="nav_remove" onClick={OpenPages}>
+                    Pages
+                    <AiOutlinePlus className="plus5_navbar" />
+                  </li>
+                  <ul className="pages_portfolio">
+                    <li></li>
+                    <li>Team1</li>
+                    <li>Team2</li>
+                    <li>Pricing</li>
+                    <li>Branding</li>
+                    <li>Web Design</li>
+                    <li>Contact</li>
+                  </ul>
+                  <li id="mob_port" onClick={OpenPortfolio}>
+                    Portolio
+                    <AiOutlinePlus className="plus_navbar plus2_navbar" />
+                  </li>
+                  <ul className="portfolio_portfolio">
+                    <li></li>
+                    <li>Fadeout</li>
+                  </ul>
+                  <li id="mob_shop" className="nav_remove" onClick={OpenShop}>
+                    Shop
+                    <AiOutlinePlus className="plus3_navbar" />
+                  </li>
+                  <ul className="shop_portfolio">
+                    <li></li>
+                    <li>Shop Page</li>
+                    <li>Shop Single</li>
+                    <li>Cart</li>
+                    <li>Checkout</li>
+                    <li>My account</li>
+                  </ul>
+                  <li id="mob_blog" className="nav_remove" onClick={OpenBlog}>
+                    Blog
+                    <AiOutlinePlus className="plus4_navbar" />
+                  </li>
+                  <ul className="blog_portfolio">
+                    <li></li>
+                    <li>Blog Classic</li>
+                    <li>Single Post</li>
+                  </ul>
                 </ul>
               </div>
             </div>
