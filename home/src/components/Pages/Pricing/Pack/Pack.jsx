@@ -1,5 +1,6 @@
 import React from "react";
 import "./Pack.scss";
+import { Link } from "react-router-dom";
 import background_img from "./../../../../assets/Background/background.jpg";
 const Packages = () => {
   return (
@@ -13,7 +14,9 @@ const Packages = () => {
                 The Forester / <span>Branding</span>
               </p>
               <div className="explore_now">
-                <a href="#">back to homepage</a>
+                <Link to={'./'}>
+                  back to homepage
+                </Link>
               </div>
             </div>
           </div>

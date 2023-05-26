@@ -1,5 +1,6 @@
 import React from "react";
 import "./Our.scss";
+import { Link } from "react-router-dom";
 import background_img from "./../../../../assets/Background/background.jpg";
 const Our = () => {
   return (
@@ -13,7 +14,9 @@ const Our = () => {
                 The Forester / <span>Gallery 10</span>
               </p>
               <div className="explore_now">
-                <a href="#">back to homepage</a>
+                <Link to={'./'}>
+                  back to homepage
+                </Link>
               </div>
             </div>
           </div>

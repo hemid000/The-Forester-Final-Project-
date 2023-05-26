@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 import { IoMdCall } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";
 import { ImHome3 } from "react-icons/im";
@@ -12,11 +13,19 @@ const Footer = () => {
           <div className="col-lg-9 col-md-6 col-sm-12">
             <div className="footer_left">
               <ul>
-                <li>home</li>
+                <Link to={'./'} className="link">
+                  <li className="hover_lists_home">
+                    Home
+                  </li>
+                </Link>
                 <li>services</li>
                 <li>portfolio</li>
                 <li>team</li>
-                <li>contact</li>
+                <Link to={'./contact'} className="link">
+                  <li className="hover_lists_home">
+                    Contact
+                  </li>
+                </Link>
               </ul>
               <ul>
                 <p>

@@ -20,7 +20,7 @@ const Forester = () => {
                 eccentric stuff that will leave you speechless
               </h4>
               <div className="explore_now">
-                <a href="#">explore now</a>
+                <a>explore now</a>
               </div>
             </div>
           </div>

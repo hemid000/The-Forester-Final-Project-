@@ -8,7 +8,6 @@ import Layout from "./components/Layout/Layout";
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./../node_modules/bootstrap/dist/js/bootstrap";
 import "./../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import Error from "./components/Pages/Error/Error";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -30,7 +29,9 @@ root.render(
     </BrowserRouter>
   ) : (
     <BrowserRouter>
-      <Error />
+      <Layout>
+        <App />
+      </Layout>
     </BrowserRouter>
   )
 );

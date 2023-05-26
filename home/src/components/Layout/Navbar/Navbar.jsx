@@ -323,7 +323,11 @@ const Navbar = () => {
                       <li>Slider 5 Column</li>
                     </ul>
                   </li>
-                  <li className="hover_lists_home">Blog Classic</li>
+                  <Link to={'./classic'} className="link">
+                    <li className="hover_lists_home">
+                      Blog Classic
+                    </li>
+                  </Link>
                   <li className="hover_lists_home">Single Post</li>
                 </ul>
               </li>
