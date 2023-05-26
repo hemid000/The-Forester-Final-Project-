@@ -13,7 +13,7 @@ const Plan = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="plan_box">
               <div className="plan_money">
                 <h3>$ 15</h3>
@@ -32,7 +32,7 @@ const Plan = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="plan_box">
               <div className="plan_money">
                 <h3>$ 30</h3>
@@ -52,7 +52,7 @@ const Plan = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="plan_box">
               <div className="plan_money">
                 <h3>$ 60</h3>

@@ -30,7 +30,7 @@ const Service = () => {
         <div className="row g-4">
           {Service_cards &&
             Service_cards.slice(0, visible).map((element) => (
-              <div className="col-lg-4" key={`service_id${element.id}`}>
+              <div className="col-lg-4 col-md-6 col-sm-12" key={`service_id${element.id}`}>
                 <div className="service_box">
                   <div className="service_img">
                     <img src={service_card_img} alt="" />

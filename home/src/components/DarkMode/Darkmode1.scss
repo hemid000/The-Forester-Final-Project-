@@ -1,0 +1,16 @@
+#darkMode {
+    filter: grayscale(100%);
+    transition: 0.3s ease-in-out;
+    border: none;
+    background-color: transparent;
+  }
+  
+  #darkMode:hover {
+    filter: none;
+    cursor: pointer;
+  }
+  #darkMode:active {
+    color: white;
+    background-color: white;
+    background-color: rgb(199, 199, 199);
+  }

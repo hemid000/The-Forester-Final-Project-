@@ -9,8 +9,10 @@ import { BsVimeo } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { HiBars3 } from "react-icons/hi2";
 import logo from "./../../../../src/assets/Home/Logo_img/logo.png";
-import Darkmode from "../../DarkMode/DarkMode1"
+import Darkmode1 from "../../DarkMode/Darkmode1"
 const Navbar = () => {
+
+
   const [btnState, setBtnState] = useState(false)
 
   function handleClick() {
@@ -19,8 +21,8 @@ const Navbar = () => {
 
   let toggleClassCheck = btnState ? ' toggle_class' : '';
 
-  const  [navbar, setNavbar] = useState(false)
-  
+  const [navbar, setNavbar] = useState(false)
+
   const changeBackgroundColor = () => {
     if (window.scrollY >= 80) {
       setNavbar(true)
@@ -29,7 +31,7 @@ const Navbar = () => {
   }
   window.addEventListener('scroll', changeBackgroundColor)
   return (
-    <nav id="nav" className={  navbar ? 'active' : ''}>
+    <nav id="nav" className={navbar ? 'active' : ''}>
       <div className="container">
         <div className="row">
           <div className="col-md-5">
@@ -266,8 +268,9 @@ const Navbar = () => {
                 <img src={logo} alt="" />
               </Link>
             </div>
-            <div className="nav_bar" onClick={handleClick}>
-              <HiBars3 />
+            <div className="nav_bar">
+              <HiBars3 onClick={handleClick} />
+              <Darkmode1 />
               <div className={`nav1_mobile${toggleClassCheck}`}>
                 <ul>
                   <li>Home</li>
@@ -297,7 +300,7 @@ const Navbar = () => {
                 <li>vimeo</li>
               </div>
               <div className="nav_dark">
-                <Darkmode />
+                <Darkmode1 />
               </div>
             </ul>
           </div>

@@ -3,7 +3,7 @@ import "./Get.scss";
 
 const Get = () => {
   return (
-    <section id="get">
+    <section id="get1">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">

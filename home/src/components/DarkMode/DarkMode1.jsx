@@ -1,33 +1,56 @@
 import React from "react";
-import { ReactComponent as Sun } from "./Sun.svg";
-import { ReactComponent as Moon } from "./Moon.svg";
-import "./DarkMode1.css";
+import "./Darkmode1.scss";
+import { BsSun, BsMoonFill } from "react-icons/bs";
 
 const DarkMode = () => {
-    const setDarkMode = () => {
-        document.querySelector("body").setAttribute('data-theme', 'dark')
+  let clickedClass = "clicked";
+  const body = document.body;
+  const lightTheme = "light";
+  const darkTheme = "dark";
+  let theme;
+
+  if (localStorage) {
+    theme = localStorage.getItem("theme");
+  }
+  if (theme === lightTheme || theme === darkTheme) {
+    body.classList.add(theme);
+  } else {
+    body.classList.add(lightTheme);
+  }
+  const switchTheme = (e) => {
+    if (theme === darkTheme) {
+      body.classList.replace(darkTheme, lightTheme);
+      e.target.classList.remove(clickedClass);
+      localStorage.setItem("theme", "light");
+      theme = lightTheme;
+    } else {
+      body.classList.replace(lightTheme, darkTheme);
+      e.target.classList.add(clickedClass);
+      localStorage.setItem("theme", "dark");
+      theme = darkTheme;
     }
-    const setLightMode = () => {
-        document.querySelector("body").setAttribute('data-theme', 'light')
-    }
-    const ToggleTheme = (e) => {
-        if (e.target.checked) setDarkMode();
-        else setLightMode();
-    }
-    return (
-        <div className='dark_mode'>
-            <input
-                className='dark_mode_input'
-                type='checkbox'
-                id='darkmode-toggle'
-                onChange={ToggleTheme}
-            />
-            <label className='dark_mode_label' for='darkmode-toggle'>
-                <Sun />
-                <Moon />
-            </label>
-        </div>
-    );
+  };
+  return (
+    <button
+      className={theme === "dark" ? clickedClass : ""}
+      id="darkMode"
+      onClick={(e) => switchTheme(e)}
+    >
+      {" "}
+      <BsMoonFill
+        style={{ fontSize: "20px", margin: "-6px 0 0 0 ", color: 'white' }}
+        className="moon"
+      />
+      <BsSun
+        className="sun"
+        style={{
+          color: "rgb(255, 255, 255)",
+          fontSize: "19px",
+          margin: "-6px 0 0 0 ",
+        }}
+      />
+    </button>
+  );
 };
 
 export default DarkMode;

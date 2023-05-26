@@ -1,0 +1,84 @@
+body.light {
+    background-color: white;
+    color: black;
+
+    #darkmode_img {
+        display: none;
+    }
+
+    .sun {
+        color: white;
+        display: none;
+    }
+}
+
+
+body.dark {
+    background-color: #131518 !important;
+    color: rgb(255, 255, 255) !important;
+
+    .moon {
+        color: white !important;
+        display: none;
+    }
+
+    #nav {
+        background-color: black;
+    }
+
+    #service,
+    #creative,
+    #social,
+    #get,
+    #team,
+    #gallery,
+    #logo,
+    #story,
+    #brand,
+    #pack,
+    #plan,
+    #get1 {
+        background-color: black !important;
+    }
+
+    #lightmode_img {
+        display: none;
+    }
+
+    #dark-mode-img {
+        display: block;
+    }
+
+
+    h2,
+    h5,
+    h3,
+    a,
+    p,
+    input,
+    input::placeholder,
+    li {
+        color: white !important;
+    }
+
+    svg {
+        color: white !important;
+    }
+
+    .explore_now {
+        a {
+            border: 1px solid white !important;
+        }
+    }
+
+    .service_details,
+    .team_details {
+        background-color: black !important;
+    }
+
+    .get_right {
+        input::placeholder {
+            color: black !important;
+        }
+    }
+}

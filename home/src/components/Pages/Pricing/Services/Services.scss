@@ -15,6 +15,10 @@
     }
 
     h2 {
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+
       @extend %service_h2_copy;
       margin-bottom: 10px;
     }
@@ -26,6 +30,10 @@
   }
 
   .service_box {
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+
     &:hover {
       .service_ruler {
         transform: translateY(-10px);
