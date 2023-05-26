@@ -7,7 +7,7 @@ import Fadeout from "./components/Pages/Fadeout/Fadeout"
 import Pricing from "./components/Pages/Pricing/Pricing"
 import Shop from "./components/Pages/Shop/Shop"
 import Single from "./components/Pages/Single/Single"
-
+import Error from "./components/Pages/Error/Error"
 const router = [
     {
         path: "/",
@@ -54,6 +54,11 @@ const router = [
         path: "/classic",
         exact: true,
         component: <Classic />,
+    },
+    {
+        path: "*",
+        exact: true,
+        component: <Error />,
     },
 ]
 

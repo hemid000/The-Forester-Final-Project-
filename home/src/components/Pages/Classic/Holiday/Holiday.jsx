@@ -1,14 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Holiday.scss";
 import Holiday_cards from "../../../../Mock/Holiday/Holiday_cards";
 const Holiday = () => {
+  const [currentPage, setCurrentPage] = useState(1)
+  const recordsPerPage = 2;
+  const lastIndex = currentPage * recordsPerPage
+  const firstIndex = lastIndex - recordsPerPage
+  const records = Holiday_cards.slice(firstIndex, lastIndex)
+  const npage = Math.ceil(Holiday_cards.length / recordsPerPage)
+  const numbers = [...Array(npage + 1).keys()].slice(1)
+
+  function prePage() {
+    if (currentPage !== 1) {
+      setCurrentPage(currentPage - 1)
+    }
+  }
+  function changeCPage(id) {
+    setCurrentPage(id)
+  }
+  function nextPage() {
+    if (currentPage !== npage) {
+      setCurrentPage(currentPage + 1)
+    }
+  }
   return (
     <section id="holiday">
       <div className="container">
         <div className="row">
           <div className="col-lg-9">
-            {Holiday_cards &&
-              Holiday_cards.map((el) => (
+            {records &&
+              records.map((el) => (
                 <div className="holiday_left" key={`holiday_id${el.id}`}>
                   <div className="holiday_header">
                     <h5>{el.type}</h5>
@@ -41,6 +62,21 @@ const Holiday = () => {
                   </div>
                 </div>
               ))}
+            <ul className="pagination">
+              <li className="page_item">
+                <a onClick={prePage} className="page_link">Prev</a>
+              </li>
+              {
+                numbers.map((n, i) => (
+                  <li className={`page_item ${currentPage === n ? 'active' : ''}`} key={i}>
+                    <a onClick={() => changeCPage(n)} className="page_link">{n}</a>
+                  </li>
+                ))
+              }
+              <li className="page_item">
+                <a onClick={nextPage} className="page_link">Next</a>
+              </li>
+            </ul>
           </div>
           <div className="col-lg-3">
             <div className="holiday_right">
