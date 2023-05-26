@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import Layout from "./components/Layout/Layout";
-
+import ScrolTotop from "./components/ScrolToTop/ScrolToTop"
 import "./../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./../node_modules/bootstrap/dist/js/bootstrap";
 import "./../node_modules/bootstrap/dist/js/bootstrap.bundle";
@@ -23,12 +23,14 @@ root.render(
     window.location.pathname === "/fadeout" ||
     window.location.pathname === "/classic" ? (
     <BrowserRouter>
+      <ScrolTotop />
       <Layout>
         <App />
       </Layout>
     </BrowserRouter>
   ) : (
     <BrowserRouter>
+      <ScrolTotop />
       <Layout>
         <App />
       </Layout>
