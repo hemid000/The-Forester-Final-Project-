@@ -39,7 +39,8 @@ body.dark {
     #plan,
     #get1,
     #login,
-    #holiday {
+    #holiday,
+    #product {
         background-color: black !important;
     }
 
@@ -67,6 +68,12 @@ body.dark {
         color: white !important;
     }
 
+    #product {
+        span {
+            color: white !important;
+        }
+    }
+
     .login_box,
     .holiday_right {
 
@@ -78,6 +85,12 @@ body.dark {
 
         input {
             background-color: black !important;
+        }
+    }
+
+    .holiday_right {
+        input {
+            border: 1px solid white !important;
         }
     }
 

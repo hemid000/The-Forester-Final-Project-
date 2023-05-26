@@ -37,7 +37,7 @@ const Product = () => {
                   <div className="row g-4">
                     {items &&
                       items.map((el) => (
-                        <div className="col-lg-3" key={`box_id${el.id}`}>
+                        <div className="col-lg-3 col-md-6 col-sm-12" key={`box_id${el.id}`}>
                           <div className="box">
                             <div className="box_img">
                               <img src={el.img} alt="" />
@@ -69,6 +69,7 @@ const Product = () => {
           <div className="col-lg-3">
             <div className="card_right">
               <div className="filter_by_price">
+                <div>
                 <h2>filter by price</h2>
                 <div id="range_simulator">
                   <Slider
@@ -77,6 +78,7 @@ const Product = () => {
                     valueLabelDisplay="auto"
                   />
                   {/* The selected range is {range[0]} - {range[1]} */}
+                </div>
                 </div>
                 <div className="explore_now">
                   <a>filter</a>

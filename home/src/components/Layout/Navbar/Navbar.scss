@@ -49,6 +49,7 @@
       gap: 6px;
       transition: 0.3s ease-in-out;
       position: relative;
+      transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
 
       &:hover {
         color: $hover_color;
@@ -60,15 +61,10 @@
       }
     }
 
-    #home_li,
-    #pages_li,
-    #portfolio_li,
-    #shop_li,
-    #blog_li {
+    li {
       .hover_ul_home {
         visibility: hidden;
         opacity: 0;
-        transition: 0.3s ease-in-out;
         position: absolute;
         top: 100%;
         left: 0;
@@ -76,6 +72,11 @@
         box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
         background-color: #131212;
         z-index: 5;
+
+        transform: perspective(2000px) translate3d(0px, -66px, 198px) rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
+        border-radius: 5px;
+        will-change: transform;
+        transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
 
         li {
           @extend %d-flex;
@@ -90,10 +91,11 @@
           letter-spacing: 0.2px;
           transition: 0.3s ease-in-out;
           color: $navbar_background_li_color;
+          transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
 
           .link {
             color: $navbar_background_li_color !important;
-            transition: 0.3s ease-in-out;
+            transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
           }
 
           .hover2_ul {
@@ -103,7 +105,11 @@
             z-index: 5;
             visibility: hidden !important;
             opacity: 0;
-            transition: 0.3s ease-in-out;
+
+            transform: perspective(2000px) translate3d(0px, -66px, 198px) rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
+            border-radius: 5px;
+            will-change: transform;
+            transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s !important;
 
             .hover2_lists {
               &:hover {
@@ -122,6 +128,7 @@
             .hover2_ul {
               visibility: visible !important;
               opacity: 1;
+              transform: scale3d(1, 1, 1);
             }
 
             .link {
@@ -135,6 +142,7 @@
         .hover_ul_home {
           visibility: visible;
           opacity: 1;
+          transform: scale3d(1, 1, 1);
         }
       }
     }
@@ -190,10 +198,6 @@
           &:hover {
             color: #dc2828;
           }
-
-          // &:first-child {
-          //   // margin-bottom: 30px;
-          // }
 
           svg {
             font-size: 38px;
