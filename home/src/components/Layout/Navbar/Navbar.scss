@@ -183,7 +183,8 @@
         padding: 0;
         padding: 0 8%;
 
-        li {
+        li,
+        a {
           @extend %d-flex;
           justify-content: space-between;
           gap: 5px;
@@ -209,9 +210,7 @@
           .plus2_navbar,
           .plus3_navbar,
           .plus4_navbar,
-          .plus5_navbar
-
-           {
+          .plus5_navbar {
             font-size: 15px;
             transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
           }

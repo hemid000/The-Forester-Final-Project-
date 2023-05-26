@@ -234,7 +234,11 @@ const Navbar = () => {
                   </Link>
                   <li className="hover_lists_home">Cart</li>
                   <li className="hover_lists_home">Checkout</li>
-                  <li className="hover_lists_home">My account</li>
+                  <Link to={'./account'} className="link">
+                    <li className="hover_lists_home">
+                      My Account
+                    </li>
+                  </Link>
                 </ul>
               </li>
               <li id="blog_li">
@@ -353,10 +357,22 @@ const Navbar = () => {
                     <li></li>
                     <li>Team1</li>
                     <li>Team2</li>
-                    <li>Pricing</li>
-                    <li>Branding</li>
+                    <li className="hover_lists_home">
+                      <Link to={'./pricing'}>
+                        Pricing
+                      </Link>
+                    </li>
+                    <li className="hover_lists_home">
+                      <Link to={'./branding'}>
+                        Branding
+                      </Link>
+                    </li>
                     <li>Web Design</li>
-                    <li>Contact</li>
+                    <li className="hover_lists_home">
+                      <Link to={'./contact'}>
+                        Contact
+                      </Link>
+                    </li>
                   </ul>
                   <li id="mob_port" onClick={OpenPortfolio}>
                     Portolio
@@ -364,7 +380,11 @@ const Navbar = () => {
                   </li>
                   <ul className="portfolio_portfolio">
                     <li></li>
-                    <li>Fadeout</li>
+                    <li className="hover_lists_home">
+                      <Link to={'./fadeout'}>
+                        Fadeout
+                      </Link>
+                    </li>
                   </ul>
                   <li id="mob_shop" className="nav_remove" onClick={OpenShop}>
                     Shop
@@ -372,11 +392,19 @@ const Navbar = () => {
                   </li>
                   <ul className="shop_portfolio">
                     <li></li>
-                    <li>Shop Page</li>
+                    <li className="hover_lists_home">
+                      <Link to={'./shop'}>
+                        Shop Page
+                      </Link>
+                    </li>
                     <li>Shop Single</li>
                     <li>Cart</li>
                     <li>Checkout</li>
-                    <li>My account</li>
+                    <li className="hover_lists_home">
+                      <Link to={'./account'}>
+                        My Account
+                      </Link>
+                    </li>
                   </ul>
                   <li id="mob_blog" className="nav_remove" onClick={OpenBlog}>
                     Blog
@@ -384,7 +412,11 @@ const Navbar = () => {
                   </li>
                   <ul className="blog_portfolio">
                     <li></li>
-                    <li>Blog Classic</li>
+                    <li className="hover_lists_home">
+                      <Link to={'./classic'}>
+                        Blog Classic
+                      </Link>
+                    </li>
                     <li>Single Post</li>
                   </ul>
                 </ul>
