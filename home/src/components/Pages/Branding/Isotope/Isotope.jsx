@@ -43,7 +43,7 @@ const Isotope = () => {
         <div className="row g-3">
           {items &&
             items.map((el) => (
-              <div className="col-lg-4" key={`isotope_id${el.id}`}>
+              <div className="col-lg-4 col-md-6 col-sm-12" key={`isotope_id${el.id}`}>
                 <div className="isotope_card">
                   <img src={el.img} alt="" />
                   <div className="isotope_details">

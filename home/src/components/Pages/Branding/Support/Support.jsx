@@ -11,8 +11,8 @@ const Support = () => {
   return (
     <section id="creative">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-4">
+        <div className="row ">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="creative_box">
               <div className="creative_icon">
                 <TfiSupport />
@@ -27,7 +27,7 @@ const Support = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="creative_box">
               <div className="creative_icon">
                 <TfiShoppingCart />
@@ -42,7 +42,7 @@ const Support = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="creative_box">
               <div className="creative_icon">
                 <IoPlayOutline />
@@ -57,7 +57,7 @@ const Support = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="creative_box">
               <div className="creative_icon">
                 <TfiCup />
@@ -72,7 +72,7 @@ const Support = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="creative_box">
               <div className="creative_icon">
                 <TfiBrushAlt />
@@ -87,7 +87,7 @@ const Support = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4">
+          <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="creative_box">
               <div className="creative_icon">
                 <TfiGift />

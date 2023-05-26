@@ -7,6 +7,10 @@
     margin-bottom: 60px;
 
     p {
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+
       @extend %story_p_copy;
       color: #000;
     }
@@ -15,11 +19,18 @@
   .isotope_lists {
     @extend %d-flex-center;
     margin-bottom: 20px;
+    padding: 0;
 
     li {
+      @media (max-width: 576px) {
+        padding: 0 8px;
+        font-size: 10px;
+      }
+
       @extend %story_h5_copy;
       padding: 0 14px;
-      font: 600 11px "Poppins", sans-serif;
+      font: 600 11px "Poppins",
+      sans-serif;
       letter-spacing: 1.5px;
       text-transform: uppercase;
       color: #000;
@@ -30,6 +41,10 @@
   }
 
   .isotope_card {
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+
     position: relative;
     overflow: hidden;
     border-radius: 5px;
@@ -41,8 +56,7 @@
       }
 
       img {
-        transform: perspective(2000px) translate3d(0px, 66px, 198px)
-          rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
+        transform: perspective(2000px) translate3d(0px, 66px, 198px) rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
         border-radius: 5px;
         will-change: transform;
       }
@@ -62,8 +76,7 @@
       height: 100%;
       background-color: rgb(166, 127, 127);
       // transform: translateX(-100%);
-      transform: perspective(2000px) translate3d(0px, 66px, 198px)
-        rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
+      transform: perspective(2000px) translate3d(0px, 66px, 198px) rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
       border-radius: 5px;
       will-change: transform;
       transition: 0.4s ease-in-out transform;
