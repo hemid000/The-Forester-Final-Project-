@@ -15,6 +15,9 @@
     cursor: grab;
 
     h2 {
+      @media (max-width: 576px) {
+        font-size: 30px;
+      }
       color: #fff;
       letter-spacing: 0.2px;
       font-size: 50px;

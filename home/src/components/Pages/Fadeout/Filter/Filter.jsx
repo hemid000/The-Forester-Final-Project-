@@ -37,7 +37,7 @@ const Filter = () => {
         <div className="row g-2">
           {items &&
             items.map((el) => (
-              <div className="col-lg-6" key={`gallery_id${el.id}`}>
+              <div className="col-lg-6 col-md-6 col-sm-12" key={`gallery_id${el.id}`}>
                 <div className="gallery_card">
                   <img src={el.img} alt="" />
                   <div className="gallery_details">

@@ -40,9 +40,7 @@ const Reviews = () => {
               <div className="col-lg-6">
                 <div className="reviews_box">
                   <h2>
-                    “ Fast and versatile, Leone team executed each service that
-                    we requested rapidly. Very pleasant collective, looking
-                    forward to collaborate with them.”
+                    “ The team at LeoneDesign done a really great job helping me to customize and implement new features on my page, thank you LeoneDesign!”
                   </h2>
                   <p>Lenny Potter</p>
                   <h5>Manager</h5>
@@ -66,9 +64,7 @@ const Reviews = () => {
               <div className="col-lg-6">
                 <div className="reviews_box">
                   <h2>
-                    “ Fast and versatile, Leone team executed each service that
-                    we requested rapidly. Very pleasant collective, looking
-                    forward to collaborate with them.”
+                    “ The template is well done, good design and simple code. LeoneDesign has incredible support and they are very friendly!”
                   </h2>
                   <p>Gabriel Jorge</p>
                   <h5>our client</h5>
