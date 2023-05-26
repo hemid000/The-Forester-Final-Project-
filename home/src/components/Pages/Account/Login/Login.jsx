@@ -20,7 +20,7 @@ const Login = () => {
                   <span>Remember me </span>
                 </label>
                 <div className="explore_now">
-                  <a href="#">log in</a>
+                  <a>log in</a>
                 </div>
                 <p>Lost your password?</p>
               </form>
@@ -39,7 +39,7 @@ const Login = () => {
                 <label htmlFor="password">Password *</label>
                 <input type="text" required />
                 <div className="explore_now">
-                  <a href="#">register</a>
+                  <a>register</a>
                 </div>
               </form>
             </div>

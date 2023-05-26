@@ -37,7 +37,8 @@ body.dark {
     #brand,
     #pack,
     #plan,
-    #get1 {
+    #get1,
+    #login {
         background-color: black !important;
     }
 
@@ -63,6 +64,19 @@ body.dark {
 
     svg {
         color: white !important;
+    }
+
+    .login_box {
+
+        input::placeholder,
+        label,
+        span {
+            color: white !important;
+        }
+
+        input {
+            background-color: black;
+        }
     }
 
     .explore_now {
