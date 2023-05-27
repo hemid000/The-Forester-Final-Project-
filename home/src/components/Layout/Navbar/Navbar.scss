@@ -91,14 +91,14 @@
           letter-spacing: 0.2px;
           transition: 0.3s ease-in-out;
           color: $navbar_background_li_color;
-          transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
 
           .link {
             color: $navbar_background_li_color !important;
-            transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
           }
 
           .hover2_ul {
+            transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s;
+
             @extend .hover_ul_home;
             top: 0;
             left: 100%;
@@ -109,7 +109,6 @@
             transform: perspective(2000px) translate3d(0px, -66px, 198px) rotateX(-55deg) scale3d(0.86, 0.75, 1) translateY(50px);
             border-radius: 5px;
             will-change: transform;
-            transition: all cubic-bezier(0.645, 0.045, 0.355, 1) 0.35s !important;
 
             .hover2_lists {
               &:hover {

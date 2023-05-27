@@ -14,7 +14,7 @@ const Our = () => {
                 The Forester / <span>Gallery 10</span>
               </p>
               <div className="explore_now">
-                <Link to={'./'}>
+                <Link to={'/'}>
                   back to homepage
                 </Link>
               </div>

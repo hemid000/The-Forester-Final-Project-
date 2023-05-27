@@ -14,7 +14,7 @@ const Packages = () => {
                 The Forester / <span>Branding</span>
               </p>
               <div className="explore_now">
-                <Link to={'./'}>
+                <Link to={'/'}>
                   back to homepage
                 </Link>
               </div>

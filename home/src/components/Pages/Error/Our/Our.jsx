@@ -14,7 +14,7 @@ const Our = () => {
                                 404 Page / <span>404</span>
                             </p>
                             <div className="explore_now">
-                                <Link to={'./'}>
+                                <Link to={'/'}>
                                     back to homepage
                                 </Link>
                             </div>
