@@ -31,9 +31,7 @@ root.render(
   ) : (
     <BrowserRouter>
       <ScrolTotop />
-      <Layout>
-        <App />
-      </Layout>
+      <App />
     </BrowserRouter>
   )
 );
