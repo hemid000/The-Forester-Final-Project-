@@ -11,7 +11,7 @@ import { IoCloseSharp } from "react-icons/io5";
 import { HiBars3 } from "react-icons/hi2";
 import { AiOutlinePlus } from "react-icons/ai";
 import logo from "./../../../../src/assets/Home/Logo_img/logo.png";
-import Darkmode1 from "../../DarkMode/Darkmode1"
+import Darkmode1 from "../../DarkMode/DarkMode1";
 const Navbar = () => {
 
 

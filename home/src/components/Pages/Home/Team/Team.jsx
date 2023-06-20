@@ -1,6 +1,6 @@
 import React from "react";
 import "./Team.scss";
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import team1_img from "./../../../../assets/Home/Team/team-1.jpg";
 import team2_img from "./../../../../assets/Home/Team/team-2.jpg";
 import team3_img from "./../../../../assets/Home/Team/team-3.jpg";
@@ -22,7 +22,7 @@ const Team = () => {
           </div>
         </div>
         <div className="row">
-          <Fade top distance="10%" duration={1500}>
+        
             <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="team_box">
                 <img src={team1_img} alt="" />
@@ -83,7 +83,7 @@ const Team = () => {
                 </div>
               </div>
             </div>
-          </Fade>
+         
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Gallery.scss";
-import Zoom from 'react-reveal/Zoom';
+// import Zoom from 'react-reveal/Zoom';
 import { IoClose } from "react-icons/io5";
 import Gallery_cards from "../../../../Mock/Home/Gallery/Gallery.cards";
 
@@ -38,7 +38,7 @@ const Gallery = () => {
         <div className="row g-2">
           {items &&
             items.map((el) => (
-              <Zoom bottom distance="90%" duration={1000} key={`gallery_id${el.id}`}>
+             <div key={`gallery_id${el.id}`}>
                 <div className="col-lg-6 col-md-6 col-sm-12">
                   <div className="gallery_card">
                     <img src={el.img} alt="" />
@@ -51,7 +51,7 @@ const Gallery = () => {
                     </div>
                   </div>
                 </div>
-              </Zoom>
+         </div>
             ))}
         </div>
       </div>
